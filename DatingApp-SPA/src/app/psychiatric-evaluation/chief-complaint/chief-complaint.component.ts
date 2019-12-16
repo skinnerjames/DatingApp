@@ -8,11 +8,12 @@ import { FormControl } from '@angular/forms';
 })
 export class ChiefComplaintComponent implements OnInit {
 
+    isClicked = true;
 
   // prevTxs = ['yes', 'no'];
 
 
-  constructor() {const isClicked = new FormControl(); }
+  constructor() {}
 
   ngOnInit() {
   }

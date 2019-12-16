@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SystemsReviewComponent } from './systems-review.component';
+import { SystemsReviewComponent } from './psych-systems-review.component';
 
 describe('SystemsReviewComponent', () => {
   let component: SystemsReviewComponent;

@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { PsychiatricEvaluationComponent } from './psychiatric-evaluation/psychiatric-evaluation.component';
 import { ChiefComplaintComponent } from './psychiatric-evaluation/chief-complaint/chief-complaint.component';
-import { SystemsReviewComponent} from './psychiatric-evaluation/systems-review/systems-review.component';
+import { PsychSystemsReviewComponent} from './psychiatric-evaluation/psych-systems-review/psych-systems-review.component';
 import { MedicalHistoryComponent} from './psychiatric-evaluation/medical-history/medical-history.component';
 import { MentalStatusComponent} from './psychiatric-evaluation/mental-status/mental-status.component';
 import { RouterModule } from '@angular/router';
@@ -25,7 +25,7 @@ import { MedicationComponent } from './medication/medication.component';
       MedicalHistoryComponent,
       MentalStatusComponent,
       MedicationComponent,
-      SystemsReviewComponent
+      PsychSystemsReviewComponent
 
    ],
    imports: [
