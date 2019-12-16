@@ -1,3 +1,102 @@
-<p>
-  chief-complaint works!
-</p>
+
+<form>
+  <div class="container-fluid">
+  <div class="form-group">
+    <h5>Chief Complaint</h5>
+      
+      <input type="text" class="form-control" id="chiefComplaint" >
+      <small id="chiefCompaintHelp" class="form-text text-muted">This should be the client's statement of why they are seeking help</small>
+  </div>
+  <div>
+      <h5>History of present illness</h5>
+      <label for="symptoms">Symptoms</label>
+      <input type="text" class="form-control" id="symptoms" >
+  </div>   
+  <br>
+  <div class="form-group" >
+     <p>How long have these symptoms been bothering you?</p>
+        <div class="form-check">
+          <label class="form-check-label" for="symptomLength1">
+            <input type="checkbox" class="form-check-input" id="symptomLength1" name="symptomLength1" value="1" >Less than 6 months
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="symptomLength2">
+            <input type="checkbox" class="form-check-input" id="symptomLength2" name="symptomLength2" value="2">6 months to 1 year
+          </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="symptomLength3">
+              <input type="checkbox" class="form-check-input" id="symptomLength3" name="symptomLength3" value="3">1 to 2 years
+            </label>
+          </div>
+          <div class="form-check">
+              <label class="form-check-label" for="symptomLength4">
+                <input type="checkbox" class="form-check-input" id="symptomLength4" name="symptomLength4" value="4">Greater than 2 years
+              </label>
+            </div>
+    </div>
+    <div>
+        <label for="sxChangeOverTime">How have these symptoms changed over time?</label>
+        <input type="text" class="form-control" id="sxChangeOverTime" >
+    </div>
+    <div>
+        <label for="sxBetterWorse">What makes it better or worse?</label>
+        <input type="text" class="form-control" id="sxBetterWorse" >
+    </div>
+    <div>
+        <label for="sxSettingBetWorse">Is there a particular setting in which it is better or worse?</label>
+        <input type="text" class="form-control" id="sxSettingBetWorse" >
+    </div>
+    <div>
+        <label for="sxSetting" data-toggle="tooltip" data-placement="top" title="School, home, work, etc.">Is there a particular setting in which it is better or worse?</label>
+        <input type="text" class="form-control" id="sxSetting" >
+    </div>
+    <div>
+        <label for="sxSetting2">Are these symptoms impacted by home, work, school, weather, legal issues, relationships, etc?</label>
+        <input type="text" class="form-control" id="sxSetting2" >
+    </div>
+    <div>
+        <label for="sxBetter" data-toggle="tooltip" data-placement="top" title="Examples like medications, treatments, therapy, coping skills, support group, time of day, etc.">What alleviates, or makes it better?</label>
+        <input type="text" class="form-control" id="sxBetter" >
+    </div>
+    <div>
+        <label>Have you previously recieved treatment for this issue?</label>
+      <input type="checkbox" [formControl]="isClicked">
+        </div>
+       
+        <div *ngIf="isClicked">
+            <div>
+              <label >Please provide details on your previous treatment.</label>
+            </div>
+            <div>
+                <label for="sxPrevTxDet1" >Who provided the treatment?</label>
+                <input type="text" class="form-control" id="sxPrevTxDet1" >
+            </div>  
+            <div>
+                <label for="sxPrevTxDet5" >Is it still current?</label>
+                <input type="text" class="form-control" id="sxPrevTxDet5" >
+            </div>  
+            <div>
+                <label for="sxPrevTxDet2" >How long did it last?</label>
+                <input type="text" class="form-control" id="sxPrevTxDet2" >
+            </div>   
+            <div>
+                <label for="sxPrevTxDet3" >Was it successful?</label>
+                <input type="text" class="form-control" id="sxPrevTxDet3" >
+            </div>   
+            <div>
+                <label for="sxPrevTxDet4" >How was the treatment terminated?</label>
+                <input type="text" class="form-control" id="sxPrevTxDet4" >
+            </div>    
+        </div>
+        
+    
+    <div class="text-left">
+    <button type="button" class="btn btn-primary">Save and Continue</button>
+  </div>
+
+</div>
+
+</form>
+

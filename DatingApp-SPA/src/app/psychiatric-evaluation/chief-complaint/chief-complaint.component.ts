@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-chief-complaint',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChiefComplaintComponent implements OnInit {
 
-  constructor() { }
+
+  // prevTxs = ['yes', 'no'];
+
+
+  constructor() {const isClicked = new FormControl(); }
 
   ngOnInit() {
   }
 
-}
+  }
+
+
+
