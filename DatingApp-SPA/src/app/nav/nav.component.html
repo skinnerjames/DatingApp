@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Dating App</a>
   
-
- 
+  
+  <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="#">Matches <span class="sr-only">(current)</span></a>
@@ -16,10 +16,26 @@
       <li class="nav-item" routerLinkActive="active" >
         <a class="nav-link" [routerLink]="['/medication']" >Medications</a>
       </li>
+
+     
       <li class="nav-item" routerLinkActive="active" >
         <a class="nav-link" [routerLink]="['/psycheval']" >Psychiatric Evaluation</a>
       </li>
+     
+         <li class="nav-item" routerLinkActive="active" ngbDropdown>
+          <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown3" role="button">
+            Psychiatric evaluation
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+            <a ngbDropdownItem [routerLink]="['/chiefcomplaint']" (click)="$event.preventDefault()">Chief complaint</a>
+            <a ngbDropdownItem [routerLink]="['/psychsystemsreview']" (click)="$event.preventDefault()">Psych systems review</a>
+            <a ngbDropdownItem [routerLink]="['/medicalhistory']" (click)="$event.preventDefault()">Medical history</a>
+            <a ngbDropdownItem [routerLink]="['/addictionhistory']" (click)="$event.preventDefault()">Addiction history</a>
+          </div>
+        </li>
+
     </ul>
+  </div>
 
     <div *ngIf="loggedIn()" class="dropdown">
       <a class="dropdown-toggle text-light"  >

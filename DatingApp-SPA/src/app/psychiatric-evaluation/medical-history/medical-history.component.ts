@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MedicalHistoryComponent implements OnInit {
 
+  psychHistIsClicked = false;
+  prevLethalityIsClicked = true;
+  prevSelfHarmIsClicked = true;
+  otherHarmIsClicked = true;
+  prevDomViolIsClicked = true;
+  prevLegalIsClicked = true;
+
   constructor() { }
 
   ngOnInit() {

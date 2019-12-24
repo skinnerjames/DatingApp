@@ -1,3 +1,205 @@
-<p>
-  medical-history works!
-</p>
+<div class="container-fluid">
+<div role="form" class="form-horizontal">
+<div>
+  <h4> Medical history </h4>  
+</div>
+<div> 
+<h5>Past psychiatric history</h5>
+</div> 
+    <div class="row">
+      <span class="col-sm">Have you previously been treated for a psychiatric illness?</span>
+        <div class="col-sm-1">  
+          <input type="checkbox" [formControl]="psychHistIsClicked">yes
+        </div>   
+    </div>         
+
+    <div *ngIf="psychHistIsClicked">
+      <div>
+        <h6>Symptoms</h6>
+        <label for="sxPrevTxDet1" >What were the symptoms?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >When did they occur?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >How long did they last?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >How frequent were the episodes?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >How severe were the episodes?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+     
+
+      <div>
+        <h6>Previous treatment.</h6>
+      </div>
+      <div>
+          <label for="sxPrevTxDet1" >In what setting did the treatment occur?</label>
+          <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >In what setting did the treatment occur?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >How frequent were the treatments?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >What was the treatment approach?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >What type of provider did you see?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Were you prescribed any medications?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1">
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Was the treatment effective?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >What was your response to the treatment?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Have you tried any alternative treatments?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1">
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Were you compliant with the treatment recommendations?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Was a diagnosis made?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >What was the diagnosis?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+      <div>
+        <label for="sxPrevTxDet1" >Who was it made by?</label>
+        <input type="text" class="form-control" id="sxPrevTxDet1" >
+      </div>
+  </div>
+
+ <div>
+    <h5>History of lethality</h5>
+      <div class="row">
+        <span class="col-sm">Have you ever attempted to harm yourself or take your own life?</span>
+          <div class="col-sm-1">  
+            <input type="checkbox" [formControl]="prevLethalityIsClicked">yes
+          </div>  
+      </div> 
+          <div *ngIf = "prevLethalityIsClicked">
+                  <div>
+                    <label >Please provide details reltaed to previous self-harm or attempted suicide.</label>
+                  </div>
+                  <div>
+                    <label for="sxPrevTxDet1" >Have you ever attempted suicide?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+                  <div>
+                    <label for="sxPrevTxDet1" >By what means?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+                  <div>
+                    <label for="sxPrevTxDet1" >Please describe the circumstances?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+                  <div>
+                    <label for="sxPrevTxDet1" >Have you ever thought about suicide?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+                  <div>
+                    <label for="sxPrevTxDet1" >Do you have a plan of how you would accomplish it?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+            </div>
+              <div class="row">
+                  
+                    <label for="sxPrevTxDet1" >Have you ever purposefully injured yourself, but without the intention of killing yourself?</label>
+                    <input type="checkbox" [formControl]="prevSelfHarmIsClicked">yes
+                    <input type="checkbox">no
+                  
+              </div>
+                
+                  <div *ngIf = "prevSelfHarmIsClicked">
+                        <div class="row">
+                          <span class="col-sm">In what ways have you previously self-harmed</span>
+                            <div class="col-lg">  
+                              <input type="checkbox" >Cutting
+                              <input type="checkbox" >Burning
+                              <input type="checkbox" >Banging head
+                              <input type="checkbox" >Biting oneself
+                            </div>
+                        </div>
+                        <div>
+                          <label for="sxPrevTxDet1" >What is your typical emotional response as a result of self-harm?</label>
+                          <input type="text" class="form-control" id="sxPrevTxDet1" >
+                        </div>
+                   </div> 
+    </div>
+    <div class="form-group">
+    <div class="row">
+      <div>
+        <label for="sxPrevTxDet1" >Do you have thoughts of harming or killing someone else?</label>
+        <input type="checkbox" [formControl]="otherHarmIsClicked">yes
+        <input type="checkbox">no
+      </div>
+     </div>
+
+                <div *ngIf="otherHarmIsClicked">
+                  <div>
+                    <label for="sxPrevTxDet1" >Does this include anyone specific?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                    <label for="sxPrevTxDet1" >Do you have a plan of how you would accomplish it?</label>
+                    <input type="text" class="form-control" id="sxPrevTxDet1" >
+                  </div>
+                </div>
+    </div>
+
+                <div>
+                   <div>
+                      <label for="sxPrevTxDet1" >Have you ever been the victim or perptrator of domestic violence?</label>
+                      <input type="checkbox" [formControl]="prevDomViolIsClicked">yes
+                      <input type="checkbox">no
+                    </div>
+               <div *ngIf = "prevDomViolIsClicked">
+                  <label for="sxPrevTxDet1" >Please describe the circumstances.</label>
+                  <input type="text" class="form-control" id="sxPrevTxDet1" >
+                </div></div>
+                <div>
+                  <label for="sxPrevTxDet1" >Have you ever had any legal issues?</label>
+                  <input type="checkbox" [formControl]="prevLegalIsClicked">yes
+                  <input type="checkbox" >no
+                </div>
+                <div *ngIf = "prevLegalIsClicked">
+                  <label for="sxPrevTxDet1" >Please describe the circumstances?</label>
+                  <input type="text" class="form-control" id="sxPrevTxDet1" >
+                </div>
+               </div>
+
+               <div class="text-left">
+                <button type="button" class="btn btn-primary" [routerLink]="['/addictionhistory']" routerLinkActive="router-link-active" >Save and Continue</button>
+              </div>
+
+        </div>
+
+  
+
+
+
+
+

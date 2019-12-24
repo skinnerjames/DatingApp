@@ -99,43 +99,47 @@
             <input type="checkbox" ng-checked="all">Flashbacks
             <input type="checkbox" ng-checked="all">Startle response
             <input type="checkbox" ng-checked="all">Avoidance
-            
+
         <h6>Social anxiety</h6>
         <h6>Simple phobias</h6>
+            <input type="checkbox" ng-checked="all">Heights
+            <input type="checkbox" ng-checked="all">Planes
+            <input type="checkbox" ng-checked="all">Spiders
+            <input type="text">Other
       </div>
       <div class="form-group">
         <h5>Psychosis</h5>
         <h6>Hallucinations</h6> 
+            <input type="checkbox" ng-checked="all">Auditory
+            <input type="checkbox" ng-checked="all">Visual
+            <input type="checkbox" ng-checked="all">Olfactory
+            <input type="checkbox" ng-checked="all">Tactile
         <h6>Paranoia</h6>
         <h6>Delusions</h6>
+            <input type="checkbox" ng-checked="all">TV
+            <input type="checkbox" ng-checked="all">Radio
+            <input type="checkbox" ng-checked="all">Thought broadcasting
+            <input type="checkbox" ng-checked="all">Mind control
+            <input type="checkbox" ng-checked="all">Referential thinking
         <h6>Patient's perception</h6>
+            <label for="ptsPerception">Spiritual or cultural context of symptoms</label>
+              <input class="text" id="ptsPerception">
       </div>
       <div class="form-group"></div>
         <h5>Other</h5>
         <h6>AHDHD symptoms</h6>
+            <input type="checkbox" ng-checked="all">Inattention
+            <input type="checkbox" ng-checked="all">Hyperactivity
+            <input type="checkbox" ng-checked="all">Impulsivity
         <h6>Eating disorder symptoms</h6>
+            <input type="checkbox" ng-checked="all">Binging
+            <input type="checkbox" ng-checked="all">Purging
+            <input type="checkbox" ng-checked="all">Excessive exercises
       </div>
 
-        <p>
-            systems-review works!
-            h.	Review of systems
-          i.	Mood
-          1.	Depression
-          2.	Mania
-          ii.	Anxiety
-          1.	General
-          2.	Panic
-          3.	OCD
-          4.	PTSD
-          iii.	Psychosis
-          1.	Hallucinations
-          2.	Paranoia
-          3.	Delusions
-          4.	Patient’ perception
-          iv.	Other
-          1.	ADHD
-          2.	Eating Disorder/
-        </p>
+      <div class="text-left">
+        <button type="button" class="btn btn-primary" [routerLink]="['/medicalhistory']" routerLinkActive="router-link-active" >Save and Continue</button>
+      </div>
 
    
 
