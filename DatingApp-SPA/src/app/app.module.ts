@@ -16,6 +16,8 @@ import { MentalStatusComponent} from './psychiatric-evaluation/mental-status/men
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { MedicationComponent } from './medication/medication.component';
+import { from } from 'rxjs';
+import { PsychHistoryComponent } from './psychiatric-evaluation/psych-history/psych-history.component';
 
 
 
@@ -25,6 +27,7 @@ import { MedicationComponent } from './medication/medication.component';
       NavComponent,
       ValueComponent,
       PsychiatricEvaluationComponent,
+      PsychHistoryComponent,
       ChiefComplaintComponent,
       MedicalHistoryComponent,
       AddictionHistoryComponent,

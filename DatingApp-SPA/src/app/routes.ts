@@ -6,6 +6,7 @@ import { PsychSystemsReviewComponent} from './psychiatric-evaluation/psych-syste
 import { MedicalHistoryComponent } from './psychiatric-evaluation/medical-history/medical-history.component';
 import { AddictionHistoryComponent } from './psychiatric-evaluation/addiction-history/addiction-history.component';
 import { ChiefComplaintComponent } from './psychiatric-evaluation/chief-complaint/chief-complaint.component';
+import { PsychHistoryComponent } from './psychiatric-evaluation/psych-history/psych-history.component';
 
 
 
@@ -13,6 +14,7 @@ export const appRoutes: Routes = [
    // {path: 'home', component: HomeComponent},
     {path: 'medication', component: MedicationComponent},
     {path: 'psycheval', component: PsychiatricEvaluationComponent},
+    {path: 'psychhistory', component: PsychHistoryComponent},
     {path: 'chiefcomplaint', component: ChiefComplaintComponent},
     {path: 'psychsystemsreview', component: PsychSystemsReviewComponent},
     {path: 'medicalhistory', component: MedicalHistoryComponent},

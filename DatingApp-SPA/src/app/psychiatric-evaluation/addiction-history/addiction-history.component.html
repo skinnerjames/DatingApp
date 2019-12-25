@@ -1,56 +1,199 @@
+<form>
+  
+   <div class="container-fluid">
+  <h3>Addiction/Substance History</h3>
+   
+     <div class="form-group form-group-inline">  
+        <div class="row">
+          <div class="col-md-3">
+            <label>Have you ever tried any of the following?</label>
+          </div>
+         <div class="col-md-9">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Tobacco</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Caffeine</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Gambling</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Eating</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Internet</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Internet</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Eating</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" (click)="priorDrugUse = !priorDrugUse">
+            <label class="form-check-label" for="inlineCheckbox3">Drugs</label>
+          </div>
+          </div>
+    </div>
+    
+   
+    
+    <div *ngIf="priorDrugUse">
+      <div class="form-group form-group-inline">
+        <div>
+              <label>Which drugs have you used?</label>
+        
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" (click)="drugFrequencyCocaine = !drugFrequencyCocaine">
+            <label class="form-check-label" for="inlineCheckbox3">Cocaine</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" (click)="drugFrequencyMeth = !drugFrequencyMeth">
+            <label class="form-check-label" for="inlineCheckbox3">Methamphetamine</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" (click)="drugFrequencyMari = !drugFrequencyMari">
+            <label class="form-check-label" for="inlineCheckbox3">Marijuana</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" (click)="drugFrequencyOpiates = !drugFrequencyOpiates">
+            <label class="form-check-label" for="inlineCheckbox3">Opiates</label>
+          </div>
+          </div>
+    </div>
+  
+    <div *ngIf="drugFrequencyCocaine">
+    <div class="form-group">
+        <div class="form-check form-check-horizontal">
+            <label class="form-check-label" for="inlineCheckbox3">How often did you use?</label>
+            <input class="form-input" id="">
+            <label class="form-check-label" for="inlineCheckbox3">Which route did you use?</label>
+            <input class="form-input" id="">
+            <label class="form-check-label" for="inlineCheckbox3">How much at one time?</label>
+            <input class="form-input" id="">
+          </div>
+        </div>
+    </div>
+        
+    <div *ngIf="drugFrequencyMeth">
+      <div class="form-group">
+          <div class="form-check form-check-horizontal">
+              <label class="form-check-label" for="inlineCheckbox3">How often did you use?</label>
+              <input class="form-input" id="">
+              <label class="form-check-label" for="inlineCheckbox3">Which route did you use?</label>
+              <input class="form-input" id="">
+              <label class="form-check-label" for="inlineCheckbox3">How much at one time?</label>
+              <input class="form-input" id="">
+            </div>
+          </div>
+      </div>
+    
 
-<p>
-xii.	
-c.
-VI.	Substance use/abuse
-a.	Which substances
-i.	Tobacco
-ii.	Caffeine
-iii.	Gambling
-iv.	Eating
-v.	Internet use
-vi.	Drugs
-b.	Routes of administration
-c.	Frequency
-d.	Amount
-e.	Legal issues arising from use
-f.	Relationship issues arising from use
-g.	Work related issues arising from use
-h.	Need for increased amounts to achieve the same results
-i.	Periods of sobriety
-i.	Length
-j.	Treatment history
-i.	Setting
-ii.	Duration
-iii.	Result
-k.	Current use
-l.	Readiness for change
-i.	Precontemplative
-ii.	Contemplative
-iii.	Action
-VII.	Past medical history
-a.	Major medical illnesses
-i.	Past
-1.	Nature of the illness
-2.	Treatments received
-3.	Effectiveness
-4.	Medications
-a.	Name
-b.	Dose
-c.	Route
-d.	Schedule
-e.	Indication
-ii.	Present
-1.	Nature of the illness
-2.	Treatments received
-3.	Effectiveness
-4.	Medications
-a.	Name
-b.	Dose
-c.	Route
-d.	Schedule
-e.	Indication
-5.	Herbal/Natural/Supplements/Vitamins
-6.	Allergies
+    <div *ngIf="drugFrequencyMari">
+      <div class="form-group">
+          <div class="form-check form-check-horizontal">
+              <label class="form-check-label" for="inlineCheckbox3">How often did you use?</label>
+              <input class="form-input" id="">
+              <label class="form-check-label" for="inlineCheckbox3">Which route did you use?</label>
+              <input class="form-input" id="">
+              <label class="form-check-label" for="inlineCheckbox3">How much at one time?</label>
+              <input class="form-input" id="">
+            </div>
+          </div>
+      </div>
 
-</p>
+      <div *ngIf="drugFrequencyOpiates">
+        <div class="form-group">
+            <div class="form-check form-check-horizontal">
+                <label class="form-check-label" for="inlineCheckbox3">How often did you use?</label>
+                <input class="form-input" id="">
+                <label class="form-check-label" for="inlineCheckbox3">Which route did you use?</label>
+                <input class="form-input" id="">
+                <label class="form-check-label" for="inlineCheckbox3">How much at one time?</label>
+                <input class="form-input" id="">
+              </div>
+            </div>
+        </div>
+</div>
+    </div>
+
+<div class="form-group">
+<div class="form-check-inline ">
+    <label class="form-check-label" for="inlineCheckbox3">Have you ever been in trouble legally as a result of using drugs or alcohol?</label>
+<div>
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Yes
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> No
+</div>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="form-check-inline ">
+      <label class="form-check-label" for="inlineCheckbox3">Have you ever had relationship trouble as a result of using drugs or alcohol?</label>
+  <div>
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Yes
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> No
+  </div>
+  </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check-inline ">
+        <label class="form-check-label" for="inlineCheckbox3">Have you ever had work related trouble as a result of using drugs or alcohol?</label>
+    <div>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Yes
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> No
+    </div>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-check-inline ">
+          <label class="form-check-label" for="inlineCheckbox3">Have you ever requierd increasing amounts of a substance to achieve the same effects?</label>
+      <div>
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Yes
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> No
+      </div>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="comment">Please describe any periods of sobriety.</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Please describe any previous treatment history including the length of treatment, setting, duration, and result.</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+
+      <p>Provider: Please provide a determination about the patient's readiness for change.</p>
+       
+      
+    
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio">Precontemplative
+          </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio">Contemplative
+        </label>
+      </div>
+      <div class="form-check-inline disabled">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio" disabled>Action
+        </label>
+      </div>
+      </div>
+   </div>   
+</form>
