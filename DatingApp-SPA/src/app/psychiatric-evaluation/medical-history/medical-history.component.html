@@ -1,16 +1,31 @@
 <form>
+    <div class="container-fluid">
+        <h4>Medical History</h4>
     <div class="form-group">
         <label>Please describe past medical history</label>
-        <textarea></textarea>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
     </div>
     <div class="form-group">
         <div class="label">Please list all current and past medications. Including doses, frequency, etc.
-            <textarea></textarea>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
         </div>
         <div class="label">Were these medications effective in treating your medical issue?
-            <input class="checkbox">
+            <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="#">Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="#">No
+                </label>
+              </div>
         </div>
-        
+
+    </div>
+    <div class="text-left">
+        <button type="button" class="btn btn-primary" [routerLink]="['/familyhistory']" routerLinkActive="router-link-active" >Save and Continue</button>
+      </div>
     </div>
 </form>
 <p>Medical history works!</p>

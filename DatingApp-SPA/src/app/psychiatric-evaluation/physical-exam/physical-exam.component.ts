@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhysicalExamComponent implements OnInit {
 
+  model: any;
+  oktogetrecords: false;
   constructor() { }
 
   ngOnInit() {
