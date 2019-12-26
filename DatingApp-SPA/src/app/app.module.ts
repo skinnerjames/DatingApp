@@ -18,6 +18,13 @@ import { appRoutes } from './routes';
 import { MedicationComponent } from './medication/medication.component';
 import { from } from 'rxjs';
 import { PsychHistoryComponent } from './psychiatric-evaluation/psych-history/psych-history.component';
+import { FamilyHistoryComponent } from './psychiatric-evaluation/family-history/family-history.component';
+import { DevsocialHistoryComponent } from './psychiatric-evaluation/devsocial-history/devsocial-history.component';
+import { DiagFormulationComponent } from './psychiatric-evaluation/diag-formulation/diag-formulation.component';
+import { DiagnosisComponent } from './psychiatric-evaluation/diagnosis/diagnosis.component';
+import { PhysicalExamComponent } from './psychiatric-evaluation/physical-exam/physical-exam.component';
+import { SystemsReviewComponent } from './psychiatric-evaluation/systems-review/systems-review.component';
+import { TxPlanComponent } from './psychiatric-evaluation/tx-plan/tx-plan.component';
 
 
 
@@ -27,13 +34,20 @@ import { PsychHistoryComponent } from './psychiatric-evaluation/psych-history/ps
       NavComponent,
       ValueComponent,
       PsychiatricEvaluationComponent,
-      PsychHistoryComponent,
-      ChiefComplaintComponent,
-      MedicalHistoryComponent,
       AddictionHistoryComponent,
+      ChiefComplaintComponent,
+      DevsocialHistoryComponent,
+      DiagFormulationComponent,
+      DiagnosisComponent,
+      FamilyHistoryComponent,
+      MedicalHistoryComponent,
       MentalStatusComponent,
+      PhysicalExamComponent,
+      PsychHistoryComponent,
+      SystemsReviewComponent,
+      TxPlanComponent,
       MedicationComponent,
-      PsychSystemsReviewComponent,
+      PsychSystemsReviewComponent
 
 
    ],
