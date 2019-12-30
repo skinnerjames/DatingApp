@@ -2,32 +2,56 @@
   <div class="container-fluid">
     <h4>Biopsychosocial Case Formulation</h4>
 
+        <div class="form-group">
+          <label for="pthistory">Provide a brief summary of the patient's history, presentation, and current status.</label>
+          <textarea class="form-control" rows="5" id="pthistory"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="biofactor">Biological factors.</label>
+          <textarea class="form-control" rows="5" id="biofactors"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Medical factors.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Medication factors.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Psychological factors.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Childhood circumstances.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Upbringing.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Past interpersonal interactions.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory" placement="top" ngbTooltip="Stressors, Contextual circumstances, Finances, School, Work, Home, Interpersonal relationships">Social factors.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory">Summary of safety assessment.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+        <div class="form-group">
+          <label for="pthistory" >Level of care recommended or required.</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea> 
+        </div>
+  <div class="row">
     <div class="text-left">
+      <button type="button" class="btn btn-primary" [routerLink]="['/physicalexam']" routerLinkActive="router-link-active">Back</button>
       <button type="button" class="btn btn-primary" [routerLink]="['/diagnosis']" routerLinkActive="router-link-active" >Save and Continue</button>
+      </div>
     </div>
   </div>
 </div>
 
-<p>
-  XIII.	Formulation
-  a.	Brief summary of patient’s history, presentation, current status
-  b.	Biological factors
-  i.	Medical
-  ii.	Family
-  iii.	Medication
-  c.	Psychological factors
-  i.	Childhood circumstances
-  ii.	Upbringing
-  iii.	Past interpersonal interactions
-  iv.	Social factors
-  1.	Stressors
-  2.	Contextual circumstances
-  a.	Finances
-  b.	School
-  c.	Work
-  d.	Home
-  e.	Interpersonal relationships
-  v.	Summary of safety assessment
-  1.	Level of care recommended or required
-  
-</p>

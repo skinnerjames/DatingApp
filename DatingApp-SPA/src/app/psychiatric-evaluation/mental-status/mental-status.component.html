@@ -1,26 +1,180 @@
-<div class="form">
+
+  <div class="form">
   <div class="container-fuild">
     <h4>Mental Status Exam</h4>
 
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <ngb-panel id="static-1" title="Appearance and behavior">
+      <ng-template ngbPanelContent>
+          <h6>Build</h6>
+            <div class="row">
+              <div class="form-group">
+                  <label for="build">Slim</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+              <div class="form-group">
+                  <label for="build">Stocky</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+            </div>
+     
+            <h6>Posture</h6>
+            <div class="row">
+              <div class="form-group">
+                  <label for="build">Slim</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+              <div class="form-group">
+                  <label for="build">Stocky</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+            </div>
+
+            <h6>Dress</h6>
+            <div class="row">
+              <div class="form-group">
+                  <label for="build">Slim</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+              <div class="form-group">
+                  <label for="build">Stocky</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+            </div>
+
+            <h6>Grooming</h6>
+            <div class="row">
+              <div class="form-group">
+                  <label for="build">Slim</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+              <div class="form-group">
+                  <label for="build">Stocky</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+            </div>
+
+            <h6>Prominant physical abnormalities</h6>
+            <div class="row">
+              <div class="form-group">
+                  <label for="build">Slim</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+              <div class="form-group">
+                  <label for="build">Stocky</label>
+                  <input type="checkbox" ng-model="build">
+              </div>
+            </div>
+   
+  </ng-template>
+</ngb-panel>
+
+
+<ngb-panel id="static-2" title="Motor Activity">
+  <ng-template ngbPanelContent>  
+<div class="form-group">
+  <label for="build">Slim</label>
+  <input type="checkbox" ng-model="build">
+</div>
+<div class="form-group">
+  <label for="build">Stocky</label>
+  <input type="checkbox" ng-model="build">
+</div>
+    
+  </ng-template>
+  </ngb-panel>
+  </ngb-accordion>
+
+    <div class="form-group">
+      <h5>Speech</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Mood</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Affect</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Thought content</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Thought process</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Perceptual disturbances</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Cognition</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Abstract reasoning</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Insight</h5>
+    </div>
+
+    <div class="form-group">
+      <h5>Judgement</h5>
+    </div>
+
+      <div class="row">
     <div class="text-left">
+      <button type="button" class="btn btn-primary" [routerLink]="['/systemsreview']" routerLinkActive="router-link-active" >Back</button>
       <button type="button" class="btn btn-primary" [routerLink]="['/physicalexam']" routerLinkActive="router-link-active" >Save and Continue</button>
     </div>
   </div>
 </div>
 
-<p>
-  XI.	Mental status examination
-  a.	Appearance and behavior
-  b.	Motor activity
-  c.	Speech
-  d.	Mood
-  e.	Affect
-  f.	Thought content
-  g.	Thought process
-  h.	Perceptual disturbances
-  i.	Cognition
-  j.	Abstract reasoning
-  k.	Insight
-  l.	Judgement
-  
-</p>
+<p>Build, posture, dress, grooming,
+  prominent physical
+  abnormalities
+  • Level of alertness: Somnolent,
+  alert
+  • Emotional facial expression
+  • Attitude toward the examiner:
+  Cooperative, uncooperative</p>
+
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <ngb-panel id="static-1" title="Simple">
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="static-2">
+      <ng-template ngbPanelTitle>
+        <span>&#9733; <b>Fancy</b> title &#9733;</span>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="static-3" title="Disabled" [disabled]="true">
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+        labore sustainable VHS.
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</div>

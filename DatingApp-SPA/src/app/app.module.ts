@@ -57,7 +57,7 @@ import { TxPlanComponent } from './psychiatric-evaluation/tx-plan/tx-plan.compon
       FormsModule,
       NgbModule,
       ReactiveFormsModule,
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
    ],
    providers: [],
    bootstrap: [

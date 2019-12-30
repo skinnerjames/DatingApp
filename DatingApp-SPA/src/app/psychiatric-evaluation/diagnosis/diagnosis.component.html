@@ -2,15 +2,26 @@
   <div class="container-fluid">
     <h4>DSM V Diagnosis</h4>
 
+    <div class="form-group">
+      <label for="pthistory" >Diagnostic impression.</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea> 
+    </div>
+
+    <div class="form-group">
+      <label for="pthistory" >Differential diagnosis.</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea> 
+    </div>
+
+    <div class="form-group">
+      <label for="pthistory" >Provisional diagnosis.</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea> 
+    </div>
+  <div class="row">
     <div class="text-left">
+      <button type="button" class="btn btn-primary" [routerLink]="['/diagformulation']" routerLinkActive="router-link-active">Back</button>
       <button type="button" class="btn btn-primary" [routerLink]="['/txplan']" routerLinkActive="router-link-active" >Save and Continue</button>
     </div>
   </div>
 </div>
-  
-p>
-  XIV.	DSM-5 diagnosis
-  a.	Differential diagnosis
-  b.	Provisional diagnosis
-  
-p>
+  </div>
+

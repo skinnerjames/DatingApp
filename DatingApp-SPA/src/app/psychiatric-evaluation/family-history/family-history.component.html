@@ -2,28 +2,49 @@
   <div class="container-fluid">
     <h4>Family History</h4>
 
+       
+          <div class="form-group">
+            <label for="comment">Do you have any family with past psychiatric diagnoses?</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="comment">Any family members who take medication for mental health support?</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Previous hospitalizations?</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Substance use disorders?</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">History of lethality</label>
+            <textarea class="form-control" rows="5" id="comment" ngbTooltip ="Suicide attempts or homicide attempts."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Medical history</label>
+            <textarea class="form-control" rows="5" id="comment"ngbTooltip ="heart disease, diabetes, hyperlipidemia, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Do you consider family to be a resource?</label>
+            <textarea class="form-control" rows="5" id="comment" ngbTooltip="Deiscuss, support, stressors, availability, etc."></textarea>
+          </div>
+
+
+    <div class="row">
     <div class="text-left">
+      <button type="button" class="btn btn-primary" [routerLink]="['/medicalhistory']" routerLinkActive="router-link-active" >Back</button>
       <button type="button" class="btn btn-primary" [routerLink]="['/devsocialhistory']" routerLinkActive="router-link-active" >Save and Continue</button>
     </div>
   </div>
 </div>
+</div>
 
-
-
-<p>
-  VIII.	Family history
-  a.	Psychiatric diagnoses
-  b.	Medications
-  c.	Hospitalizations
-  d.	Substance use disorders
-  e.	Lethality history
-  f.	Medical history
-  i.	Heart disease
-  ii.	Diabetes
-  iii.	Hyperlipidemia
-  g.	Family as a resource for the patient?
-  i.	Supportive
-  ii.	Stressors
-  iii.	Availability and adequacy of caregivers
-  
-</p>
